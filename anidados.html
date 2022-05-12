@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>awe</title>
+	
+	<script>
+	function loseventos(){
+		
+		var elemento=document.getElementsByTagName("p") [0];
+		var elemento2=document.getElementsByTagName("img") [0];
+		elemento.addEventListener("click", aviso1,true);
+		elemento2.addEventListener("click", aviso2, false);
+		
+	}
+	function aviso1(){
+		alert ("hola soy la imagen");
+		
+	}
+	
+	function aviso2(){
+		
+		alert ("hola soy el parrafo");
+	}
+	
+		window.addEventListener("load", loseventos, false);
+		
+	</script>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<p><img src="ejercicio1/imagenes/6.jpg">
+	</p>
+	
+	
+</body>
+</html>

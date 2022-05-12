@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cajadeimagenes {
+			float: left;
+			width: 300px;
+			margin: 30px;
+			border: 1px solid #FF0004;
+		}
+	
+		#zonadestino{
+			float: left;
+			width: 400px;
+			height: 300px;
+			margin: 50px;
+			border: 1px solid #000000;
+		}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+	<style>
+		table{
+			text-align: center;
+			background-color: aqua;
+			width: 254;
+			margin: auto;
+			border: 2px dashed #FF6700;
+		}
+		td{
+			padding: 15px;
+		}
+	
+	</style>
+	
+	
+	
+	<script>
+		
+	var edad;
+	
+	function comenzar(){
+		
+		edad=document.getElementById("miedad");
+		edad.addEventListener("change",cambia_rango,false);
+		
+		document.Datos_usuario.addEventListener("invalid",validar,true);
+		
+		document.getElementById("Enviar").addEventListener("click",enviar,false);
+		
+		document.Datos_usuario.addEventListener("input",validartiemporeal,false);
+	}
+		function cambia_rango(){
+			
+			var salida=document.getElementById("rango");
+			
+			var calculo=edad.value-30;
+			
+			if (calculo<30){
+				calculo=0;
+				
+				edad.value=30;
+			}
+			salida.innerHTML=calculo+" a "+ edad.value;
+		}
+	
+	function validar(e){
+		
+		var elemento=e.target;
+		elemento.style.background="#FFDDDD";
+		
+	}
+	
+	function enviar(){
+		
+		var cuadro_usuario=document.getElementById("usuario");
+		
+		var correcto=document.Datos_usuario.checkValidity();
+		
+		if(correcto==true){
+			
+			document.Datos_usuario.submit();
+		}
+		else if(cuadro_usuario.validity.valueMissing==true || cuadro_usuario.validity.patternMismatch==true){
+			
+			alert ("El usuario no puede estar vacio y debe tener tres letras");
+		}
+		
+	}
+	function validartiemporeal(e){
+		
+		var elemento=e.target;
+		
+		if (elemento.validity.valid==true){
+			
+			elemento.style.background="#FFFFFF";
+		}
+		
+		else{
+			elemento.style.background="#FFDDDD";
+		}
+	}
+	
+	
+	window.addEventListener("load", comenzar, false)
+	
+	</script>
+	
+	
+	
+<body>
+	
+	<section>
+	
+	<form name="Datos_usuario" method="get">
+		
+		<table><tr><td>
+			Usuario </td> <td> <input pattern="[A-Za-z]{3}" maxlength="10" required name="usuario" id="usuario" ></td></tr>
+			<tr><td>
+			Mail</td><td><input type="email" name="mimail" id="mimail" required>
+			</td></tr>
+			<tr><td>
+			Edad</td><td><input type="range" name="miedad" id="miedad" min="0" max="120" value="30">
+			</td></tr>
+			<tr><td>
+			<output id="rango"> 0 a 30 </output>
+				</td></tr>
+			<tr><td>
+				<input type="submit" id="Enviar" value="registrar"></td></tr></table>
+		
+		
+		
+	</form>
+	
+	
+	</section>
+	
+	
+	
+</body>
+</html>

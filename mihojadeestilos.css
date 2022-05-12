@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabezeraweb {background-color: whitesmoke; width: 990px; height: 66px;; border: solid #000000; border-radius: 5px;}
+
+h1 {color: indianred; text-align: center; font:bold 24px Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; text-shadow: blue 5px 5px 5px;}
+
+#ojo{ position:absolute;}
+
+#unown { width: 50px; height: 60px; border: solid indianred; border-radius: 5px; float: inherit; position: absolute;}
+
+nav {background-color: indianred; text-align: center; height: 10px;}
+
+li
+{background-color: lightgreen; margin: 10px; font: bold Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif", #FFFFFF;
+display: inline; border: solid #000000; border-radius: 3px;}
+
+aside {background-color: indianred;float:left; height: 590px; width: 200px; padding: 5px;border: solid #000000; border-radius: 3px;}
+
+blockquote {background-color: lightgreen; border: outset #000000; border-radius: 5px;}
+
+section {background-color: indianred; margin-left: 220px; padding-left: 20px; padding-top: 50px;border: solid #000000; border-radius: 3px;}
+
+#lospi {width: 600px; height: 400px; border: dashed #0A00FF 3px; border-radius: 50px;-webkit-transition:-webkit-transform 1s ease 0.5s;}
+#lospi:hover{-webkit-transform:rotate(360deg);}
+
+footer {background-color: indianred;border: solid #000000; border-radius: 3px; margin: 3px; padding: 3px;}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	
+	<link rel="stylesheet" href="draganddrop.css">
+	
+	<script>
+		
+	
+	function comenzar(){
+		
+		soltar=document.getElementById("zonadestino");
+		
+		soltar.addEventListener("dragenter", function(e){e.preventDefault;},false);
+		
+		soltar.addEventListener("dragover", function(e){e.preventDefault;},false);
+		
+		soltar.addEventListener("drop", soltar,false);
+	}
+	
+	function soltar(e){
+		
+		e.preventDefault();
+		
+		var archivos=e.dataTransfer.files;
+		
+		var listado="";
+		
+		for (var f=0;f<archivos.length;f++){
+			
+			listado=archivos[f].size;
+		}
+		
+		soltar.innerHTML=listado;
+	}
+	
+	
+	
+	window.addEventListener("load",comenzar, false);
+	
+	</script>
+</head>
+
+<body>
+	<section id="zonadestino">
+	
+	Alla la estan arrastrando
+	
+	</section>
+	
+	
+</body>
+</html>

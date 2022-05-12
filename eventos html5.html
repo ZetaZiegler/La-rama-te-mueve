@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eventos htlm5</title>
+	
+	<script>
+		
+		var imagen= new Array(3);
+	
+		function tipoflor() {
+			alert ("pensamiento")
+		}
+	function manejaflor(){
+		for (var i=0; i<4; i++){
+		imagen[i]=document.getElementsByTagName("img") [i];
+		}
+		imagen[0].addEventListener("mouseover",function(){imagen[0].width=225;imagen[0].height=255;}, false);
+		imagen[0].addEventListener("mouseout",function(){imagen[0].width=200;imagen[0].height=200;},false);
+		imagen[0].addEventListener("click",tipoflor,false);
+		imagen[1].addEventListener("mouseover",function(){imagen[1].width=225;imagen[1].height=255;}, false);
+		imagen[1].addEventListener("mouseout",function(){imagen[1].width=200;imagen[1].height=200;},false);
+		imagen[1].addEventListener("click",tipoflor,false);
+		imagen[2].addEventListener("mouseover",function(){imagen[2].width=225;imagen[2].height=255;}, false);
+		imagen[2].addEventListener("mouseout",function(){imagen[2].width=200;imagen[2].height=200;},false);
+		imagen[2].addEventListener("click",tipoflor,false);
+		imagen[3].addEventListener("mouseover",function(){imagen[3].width=225;imagen[3].height=255;}, false);
+		imagen[3].addEventListener("mouseout",function(){imagen[3].width=200;imagen[3].height=200;},false);
+		imagen[3].addEventListener("click",tipoflor,false);
+		
+	}
+		
+		/*function crecer(){
+			imagen.width=225;
+			imagen.height=225;*/
+			
+			
+		/*}
+		function menguar(){
+			imagen.width=200;
+			imagen.height=200;
+		}*/
+		window.addEventListener("load", manejaflor, false);
+	</script>
+	
+	
+</head>
+
+<body>
+	
+	<p><img src="ejercicio1/imagenes/1.jpg"><img src="ejercicio1/imagenes/2.jpg"><img src="ejercicio1/imagenes/3.jpg">
+	
+	</p>
+	
+	
+</body>
+</html>

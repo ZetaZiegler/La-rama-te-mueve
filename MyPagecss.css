@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+#dia{position: static; width: 100%; height: 300px;}
+#dia2{width: 100%; padding-top: 200px; margin: 0px;}
+
+#budy {background-color:#8B5A38; margin:0px; width: 100%;}
+
+h1 {text-align: center; font-family:Papyrus; color:#FDF8E5; font-size: 50px;margin-bottom: 200px;}
+
+
+
+#modo{float: right; background-color:#312E50; color:#FFFFFF; position:inherit; margin: 8px 8px 0px 0px;}
+
+ul{ float:left; text-align: center;margin: 0px 20% 0px 20%}
+
+.list {display: inline; padding: 20px; margin: auto; text-align: center; color: lightsteelblue; font-family:Egypt;} 
+
+.p0{text-align:left;font-family:Humanst;font-size:120%;font-weight:600;color:#FDF8E5; margin-left: 25%; margin-right: 25%;}
+.p1{text-align:justify;font-family:Humanst; font-size: 120%; font-weight: 500; color:#FDF8E5; width: 50%;margin: 0 25% 0 25%;}
+.p2{text-align: center; font-family:Egypt; font-size: 300%; color: #FDF8E5;padding:70px 0 70px 0;}
+
+
+@font-face {
+  font-family:"Humanst";
+  src: url("tt0288m_.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family:"Papyrus";
+  src: url("PAPYRUS.TTF");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family:"Egypt";
+  src: url("Egyptian Letters.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+#mailto{background-color:#2C2627; color:#FDF8E5; margin: -5px 0px -10px 0px; padding: 20px; text-align: center; font-family: Papyrus; font-size: 18px;}
+#contacto{margin: -5px 0px 0px 0px; width: 100%; height: 200px; padding:0px; background-color: #2C2627;}
+.colist{display: inline; padding:20px; }
+.coimg{width:70px; height:70px; padding-top: 60px;}
+
+
+
+

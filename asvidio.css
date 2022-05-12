@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+#video{
+	width: 720px;
+	margin: 20px;
+	background: 
+#FF7600;
+	padding: 5px;
+	border: 2px solid #FF0004;
+	border-radius: 4px;
+}
+
+nav{
+	margin: 5px 0;
+}
+
+#botones{
+	float: left;
+	width: 100px;
+	height: 20px;
+}
+
+#barra{
+	background: #FFFFFF;
+	width: 600px;
+	height: 16px;
+	border: solid #000000 1px;
+	padding: 3px;
+	margin-left: 80px;
+}
+
+#progreso{
+	position: absolute;
+	width: 0px;
+	height: 16px;
+	background: #0200FF;
+}
+
